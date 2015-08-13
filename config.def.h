@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char font[] = "Liberation Mono:pixelsize=12:antialias=false:autohint=false";
+static char font[] = "Source Code Pro:pixelsize=16";
 static int borderpx = 2;
 
 /*
@@ -70,30 +70,29 @@ static unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
-
-	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
-
-	[255] = 0,
-
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
+/* 8 normal colors */
+    "#121212",
+    "#d75f5f",
+    "#87af5f",
+    "#ffaf5f",
+    "#87afd7",
+    "#8787af",
+    "#5f8787",
+    "#808080",
+/* 8 bright colors */
+    "#404040",
+    "#EA8484",
+    "#C7F09F",
+    "#FFCC9A",
+    "#a5caef",
+    "#A6A6DE",
+    "#69b2b2",
+    "#d7d7d7",
+    "#080808",
+    [255] = 0,
+/* more colors can be added after 255 to use with DefaultXX */
+    "#cccccc",
+    "#333333",
 };
 
 
@@ -398,4 +397,3 @@ static Key key[] = {
 static uint selmasks[] = {
 	[SEL_RECTANGULAR] = Mod1Mask,
 };
-
